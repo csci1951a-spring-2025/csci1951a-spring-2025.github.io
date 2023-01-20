@@ -7,6 +7,15 @@ body {
   overflow-y: hidden;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  color: #af00db;
+}
+
 h1 {
   font-size: 26px;
   font-weight: 400;
@@ -86,13 +95,19 @@ li {
 }
 
 .corgi-mode {
-  background-image: url(https://ssl.gstatic.com/colaboratory-static/common/8719e62647a4f644db80a7fdd823f21b/v2/common/img/chocolatechip.gif);
+  background-image: url(https://ssl.gstatic.com/colaboratory-static/common/8719e62647a4f644db80a7fdd823f21b/v2/common/img/chocolatechip.gif),
+    url(https://ssl.gstatic.com/colaboratory-static/common/de56aa663d279b80074b6c21f69dc872/v2/common/img/oreo.gif),
+    url(https://i.pinimg.com/originals/ec/0d/5f/ec0d5f135cd6ce5a9bfc1d0e756e1339.gif);
+  /* url(../../v2/common/img/oreo.gif), url(../../v2/common/img/redvelvet.gif); */
+  /* background-image: url(https://ssl.gstatic.com/colaboratory-static/common/8719e62647a4f644db80a7fdd823f21b/v2/common/img/chocolatechip.gif); */
+  /* background-image: url(https://media3.giphy.com/media/fUSQGDRvuBlQXcX0TA/200w.gif?cid=6c09b952km2v5b0jckfnray0cr8s009ywto21eiyjaa453su&rid=200w.gif&ct=g); */
+  /* background-image: url(https://i.pinimg.com/originals/ec/0d/5f/ec0d5f135cd6ce5a9bfc1d0e756e1339.gif); */
   background-repeat: no-repeat;
   background-size: contain;
   animation: corgis 80s linear infinite;
 }
 
-/* walk across the screen */
+/* Animation for animals to walk across the screen */
 @keyframes corgis {
   0% {
     background-position: 120%, -20%, -20%, 120%;
