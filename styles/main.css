@@ -30,6 +30,41 @@ li {
   margin: 0.2rem 0;
 }
 
+.code-number {
+  color: #098156;
+}
+
+.code-line-number {
+  color: #757575;
+  padding-right: 0.3rem;
+}
+
+.code-keyword {
+  color: #af00db;
+}
+
+.code-keyword2 {
+  color: #0000ff;
+}
+
+.code-keyword3 {
+  color: #795e26;
+}
+
+.code-keyword4 {
+  color: #a31515;
+}
+
+#link {
+  color: #af00db;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#link:hover {
+  color: #925f9f;
+}
+
 /** Header */
 .header-container {
   /* fix the header to the top of the page */
@@ -81,6 +116,7 @@ li {
   padding: 0;
   list-style: none;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .right-header {
@@ -125,10 +161,11 @@ li {
 }
 
 .right-container {
-  /* padding-top: 3rem; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 88vh;
   border: 1px solid rgb(218, 218, 218);
   width: 98%;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -150,6 +187,46 @@ li {
   gap: 1rem;
 }
 
+.code-cell-container {
+  margin: 1.5rem 2rem 0;
+  padding: 1rem;
+  text-align: left;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.code-container {
+  background-color: #f7f7f7;
+  /* margin: 1.5rem 2rem 0; */
+  padding: 1rem;
+  text-align: left;
+  /* width: 95%; */
+  /* box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%),
+    0 2px 4px -1px rgb(0 0 0 / 40%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.code-cell {
+  background-color: #f7f7f7;
+  /* padding: 1rem; */
+}
+
+#last-section {
+  margin-bottom: 1.5rem;
+}
+
 .section-header {
   position: relative;
   display: flex;
@@ -161,4 +238,18 @@ li {
   position: absolute;
   left: -40px;
   height: 0.8rem;
+}
+
+/* FOOTER */
+#footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 1px;
+  /* background-color: #27282e; */
+  width: 100%;
+  font-size: 0.75rem;
+  color: white;
+  /* font-style: italic; */
+  text-align: center;
 }
