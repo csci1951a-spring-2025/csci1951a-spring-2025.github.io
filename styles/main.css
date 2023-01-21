@@ -95,9 +95,8 @@ li {
 }
 
 .corgi-mode {
-  background-image: url(https://ssl.gstatic.com/colaboratory-static/common/8719e62647a4f644db80a7fdd823f21b/v2/common/img/chocolatechip.gif),
-    url(https://ssl.gstatic.com/colaboratory-static/common/de56aa663d279b80074b6c21f69dc872/v2/common/img/oreo.gif),
-    url(https://i.pinimg.com/originals/ec/0d/5f/ec0d5f135cd6ce5a9bfc1d0e756e1339.gif);
+  background-image: url("../assets/gif/chocolatechip.gif"),
+    url("../assets/gif/oreo.gif"), url("../assets/gif/bunny.gif");
   /* url(../../v2/common/img/oreo.gif), url(../../v2/common/img/redvelvet.gif); */
   /* background-image: url(https://ssl.gstatic.com/colaboratory-static/common/8719e62647a4f644db80a7fdd823f21b/v2/common/img/chocolatechip.gif); */
   /* background-image: url(https://media3.giphy.com/media/fUSQGDRvuBlQXcX0TA/200w.gif?cid=6c09b952km2v5b0jckfnray0cr8s009ywto21eiyjaa453su&rid=200w.gif&ct=g); */
@@ -105,6 +104,13 @@ li {
   background-repeat: no-repeat;
   background-size: contain;
   animation: corgis 80s linear infinite;
+}
+
+/* do not animate corgis on mobile */
+@media (max-width: 600px) {
+  .corgi-mode {
+    background-image: none;
+  }
 }
 
 /* Animation for animals to walk across the screen */
@@ -133,15 +139,16 @@ li {
 }
 
 .left-header {
+  overflow-x: scroll;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  min-width: 10rem;
+  /* min-width: 650px; */
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .logo {
@@ -316,9 +323,21 @@ li {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .calendar {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .calendar {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .calendar {
+    width: 220px;
   }
 }
 
@@ -346,6 +365,17 @@ li {
   width: 10rem;
   object-fit: cover;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .staff-image {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .staff-card {
+    font-size: 12px;
+  }
 }
 
 /* FOOTER */
