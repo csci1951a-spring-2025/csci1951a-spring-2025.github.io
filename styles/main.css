@@ -185,8 +185,31 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
   font-size: 13px;
+}
+
+.viewing-container {
+  color: #212121;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+/* add a box shadow transition effect to the viewing container */
+.viewing-container:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.eye-icon {
+  height: 2rem;
+  cursor: default;
+  /* make the image darker */
+  filter: brightness(0.5);
 }
 
 .user-icon {
