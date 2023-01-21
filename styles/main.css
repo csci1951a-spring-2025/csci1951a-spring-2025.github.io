@@ -351,27 +351,13 @@ li {
 /* FOOTER */
 .footer {
   border: 1px solid rgb(218, 218, 218);
-  /* // stick footer to bottom of page */
-  /* position: fixed; */
-  /* bottom: 0; */
-
-  /* height: 2rem; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0.2rem 0;
-  /* margin: auto; */
-  /* max-height: 20px; */
-  /* position: relative; */
-  /* bottom: 0; */
-  /* padding-top: 15px; */
-  /* padding-bottom: 1px; */
-  /* background-color: #27282e; */
   width: 100%;
-  /* font-size: 1vh; */
   color: white;
-  /* font-style: italic; */
   text-align: center;
 }
