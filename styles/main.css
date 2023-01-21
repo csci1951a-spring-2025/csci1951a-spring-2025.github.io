@@ -225,6 +225,7 @@ li {
 .main-container {
   display: flex;
   flex-direction: row;
+  height: calc(100vh - 80px);
 }
 
 .left-container {
@@ -245,7 +246,8 @@ li {
 }
 
 .right-container {
-  height: 89vh;
+  /* max-height: 89vh; */
+  /* height: 500px; */
   overflow-y: scroll;
   overflow-x: hidden;
   border: 1px solid rgb(218, 218, 218);
@@ -402,15 +404,10 @@ li {
 
 /* FOOTER */
 .footer {
+  height: 2rem;
   border: 1px solid rgb(218, 218, 218);
   border-bottom: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 0.2rem 0;
-  width: 100%;
   color: white;
   text-align: center;
 }
@@ -418,14 +415,7 @@ li {
 .footer-text {
   color: #757575;
   font-size: 13px;
-  /* font-size: 1vh; */
 }
-
-/* @media screen and (max-height: 1000px) {
-  .footer {
-    display: none;
-  }
-} */
 
 @media screen and (max-width: 480px) {
   .footer-text {
