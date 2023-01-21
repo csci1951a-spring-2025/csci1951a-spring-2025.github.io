@@ -256,7 +256,7 @@ li {
   margin: 1.5rem 1rem 0;
   padding: 1rem;
   text-align: left;
-  width: 95%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -303,6 +303,23 @@ li {
   position: absolute;
   left: -45px;
   height: 0.8rem;
+}
+
+/* CALENDAR */
+.calendar-container {
+  margin: 1.5rem 2rem 0;
+}
+
+@media screen and (max-width: 900px) {
+  .calendar {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .calendar {
+    width: 300px;
+  }
 }
 
 /* FOOTER */
