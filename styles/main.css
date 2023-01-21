@@ -5,6 +5,7 @@ body {
   margin: 0;
   color: black;
   overflow-y: hidden;
+  /* min-height: 100vh; */
 }
 
 a {
@@ -145,10 +146,8 @@ li {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  /* min-width: 650px; */
   text-overflow: ellipsis;
   white-space: nowrap;
-  /* overflow: hidden; */
 }
 
 .logo {
@@ -246,7 +245,7 @@ li {
 }
 
 .right-container {
-  height: 86vh;
+  height: 89vh;
   overflow-y: scroll;
   overflow-x: hidden;
   border: 1px solid rgb(218, 218, 218);
@@ -404,6 +403,7 @@ li {
 /* FOOTER */
 .footer {
   border: 1px solid rgb(218, 218, 218);
+  border-bottom: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -413,4 +413,28 @@ li {
   width: 100%;
   color: white;
   text-align: center;
+}
+
+.footer-text {
+  color: #757575;
+  font-size: 13px;
+  /* font-size: 1vh; */
+}
+
+/* @media screen and (max-height: 1000px) {
+  .footer {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  .footer-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .footer-text {
+    font-size: 8px;
+  }
 }
