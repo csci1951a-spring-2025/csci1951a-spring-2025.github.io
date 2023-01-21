@@ -198,6 +198,16 @@ li {
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: default;
 }
+
+@media screen and (max-width: 780px) {
+  .viewing-container {
+    display: none;
+  }
+  .user-icon {
+    display: none;
+  }
+}
+
 /* add a box shadow transition effect to the viewing container */
 .viewing-container:hover {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
