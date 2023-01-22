@@ -155,14 +155,15 @@ li {
 }
 
 .center-header {
-  line-height: 0.5;
+  height: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.3rem;
   font-size: 18px;
   font-weight: 500;
+  overflow: auto;
 }
 
 .navlinks {
