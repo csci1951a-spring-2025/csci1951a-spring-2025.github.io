@@ -95,27 +95,27 @@ li {
   align-items: center;
 }
 
-.corgi-mode {
-  background-image: url("../assets/gif/chocolatechip.gif"),
-    url("../assets/gif/oreo.gif"), url("../assets/gif/bunny.gif");
-  /* url(../../v2/common/img/oreo.gif), url(../../v2/common/img/redvelvet.gif); */
-  /* background-image: url(https://ssl.gstatic.com/colaboratory-static/common/8719e62647a4f644db80a7fdd823f21b/v2/common/img/chocolatechip.gif); */
-  /* background-image: url(https://media3.giphy.com/media/fUSQGDRvuBlQXcX0TA/200w.gif?cid=6c09b952km2v5b0jckfnray0cr8s009ywto21eiyjaa453su&rid=200w.gif&ct=g); */
-  /* background-image: url(https://i.pinimg.com/originals/ec/0d/5f/ec0d5f135cd6ce5a9bfc1d0e756e1339.gif); */
+.animal-mode {
+  background-image: url("../../assets/gif/panda.gif"),
+    url("../assets/gif/oreo.gif"),
+    /* url("https://i.pinimg.com/originals/0e/9b/db/0e9bdb22a1a622fd8fb98e4d80419af2.gif"), */
+      /* url("https://cdn.dribbble.com/users/940782/screenshots/2715943/pandadribbble.gif"), */
+      url("https://cdna.artstation.com/p/assets/images/images/025/958/956/original/lenneke-van-doorn-runanimation-1.gif?1587462989"),
+    url("../assets/gif/chocolatechip.gif");
   background-repeat: no-repeat;
   background-size: contain;
-  animation: corgis 80s linear infinite;
+  animation: move-animal 80s linear infinite;
 }
 
-/* do not animate corgis on mobile */
+/* do not animate animals on mobile */
 @media (max-width: 600px) {
-  .corgi-mode {
+  .animal-mode {
     background-image: none;
   }
 }
 
 /* Animation for animals to walk across the screen */
-@keyframes corgis {
+@keyframes move-animal {
   0% {
     background-position: 120%, -20%, -20%, 120%;
   }
