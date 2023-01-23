@@ -300,6 +300,14 @@ li {
     0 2px 4px -1px rgb(0 0 0 / 40%);
 }
 
+.p-collapsed {
+  display: none;
+}
+
+.ul-collapsed {
+  display: none;
+}
+
 .code-cell-container {
   margin: 0.5rem 1rem 0;
   padding: 1rem;
@@ -355,6 +363,10 @@ li {
   position: absolute;
   left: -45px;
   height: 0.8rem;
+}
+
+.arrow-collapsed {
+  transform: rotate(-90deg);
 }
 
 /* CALENDAR */

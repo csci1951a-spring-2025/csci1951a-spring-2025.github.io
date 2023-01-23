@@ -107,7 +107,11 @@
         <div class="right-container">
           <div class="section-container">
             <h1 class="section-header">
-              <img src="assets/images/arrow.png" class="arrow" />
+              <img
+                src="assets/images/arrow.png"
+                class="arrow"
+                onClick="handleArrowClick(0)"
+              />
               <span>What is Data Science?</span>
             </h1>
             <p>
@@ -168,7 +172,11 @@
 
           <div class="section-container">
             <h1 class="section-header">
-              <img src="assets/images/arrow.png" class="arrow" />
+              <img
+                src="assets/images/arrow.png"
+                class="arrow"
+                onClick="handleArrowClick(1)"
+              />
               <span>Topics Covered</span>
             </h1>
             <ul>
@@ -184,7 +192,11 @@
 
           <div class="section-container">
             <h1 class="section-header">
-              <img src="assets/images/arrow.png" class="arrow" />
+              <img
+                src="assets/images/arrow.png"
+                class="arrow"
+                onClick="handleArrowClick(2)"
+              />
               <span> Final Project </span>
             </h1>
             <p>
@@ -206,7 +218,11 @@
 
           <div class="section-container" id="last-section">
             <h1 class="section-header">
-              <img src="assets/images/arrow.png" class="arrow" />
+              <img
+                src="assets/images/arrow.png"
+                class="arrow"
+                onClick="handleArrowClick(3)"
+              />
               <span> Prerequisites </span>
             </h1>
             <p>
@@ -231,524 +247,28 @@
           University
         </p>
       </div>
-
-      <!-- <div id="other-content-container">
-        <div class="container-fluid" id="header">
-          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-            <button
-              class="navbar-toggler navbar-toggler-right"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbar"
-              aria-controls="#navbar"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">cs1951a</a>
-
-            <div class="collapse navbar-collapse" id="navbar">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" id="home-nav" href="index.html"
-                  >home</a
-                >
-                <a
-                  class="nav-item nav-link"
-                  id="resources-nav"
-                  href="resources/index.html"
-                  >resources</a
-                >
-                <a
-                  class="nav-item nav-link"
-                  id="slides-nav"
-                  href="slides/index.html"
-                  >lectures</a
-                >
-                <a
-                  class="nav-item nav-link"
-                  id="assignments-nav"
-                  href="assignments/index.html"
-                  >assignments</a
-                >
-                <a
-                  class="nav-item nav-link"
-                  id="staff-nav"
-                  href="staff/index.html"
-                  >staff</a
-                >
-                <a
-                  class="nav-item nav-link"
-                  id="hours-nav"
-                  href="hours/index.html"
-                  >hours</a
-                >
-                <a
-                  class="nav-item nav-link"
-                  id="blogs-nav"
-                  href="archive/index.html"
-                  >archive</a
-                >
-              </div>
-            </div>
-          </nav>
-        </div>
-
-        <div class="flex-container" id="home">
-          <div class="left-side" id="frontcopy">
-            <div id="course-intro-panel">
-              <h1>data science</h1>
-              <p>
-                Data is the core of all domains from material science to
-                healthcare. Mastering big data requires a set of skills spanning
-                a variety disciplines, from distributed systems to statistics to
-                machine learning. This course will provide an overview of the
-                wide area of data science, with a particular focus on to the
-                tools required to store, clean, manipulate, visualize, model,
-                and ultimately extract information from large amounts of data.
-                <br />
-                <br />
-              </p>
-
-              <div class="show-desktop">
-                <p>Topics include:</p>
-                <ul>
-                  <li>Database Design and SQL</li>
-                  <li>Web Scraping & Data Cleaning</li>
-                  <li>Hypothesis Testing</li>
-                  <li>Machine Learning</li>
-                  <li>Mapreduce</li>
-                  <li>Differential Privacy</li>
-                  <li>Correlation vs Causation</li>
-                </ul>
-              </div>
-
-              <div class="show-mobile">
-                <p>Topics include:</p>
-                <ul>
-                  <li>Database Design and SQL</li>
-                  <li>Web Scraping & Data Cleaning</li>
-                  <li>Hypothesis Testing</li>
-                  <li>Machine Learning</li>
-                  <li>Mapreduce</li>
-                  <li>Data Privacy</li>
-                  <li>Correlation vs Causation</li>
-                </ul>
-              </div>
-            </div>
-
-            <img
-              src="astrology.png"
-              alt="doge"
-              style="width: 250px; height: 250px"
-              id="home-img"
-            />
-
-            <div id="final-project-panel">
-              <h1>final project</h1>
-              <p>
-                Throughout the entire course you will be working on a data
-                science project which seeks to answer an interesting and
-                important real-world question. You will be collecting your own
-                data, cleaning it, modeling it, visualizing it, and finally
-                presenting your results in a poster session at the end of the
-                course. You will work in groups of four, and will be assigned a
-                mentor TA to help you through the process.
-              </p>
-              <p>
-                Additionally, your project can be used as a capstone with just a
-                few extra requirements, fully integrating what you will have
-                learned in the course, and building a fully-functional data
-                science application.
-              </p>
-            </div>
-
-            <div id="final-project-panel">
-              <h1>prerequisites</h1>
-              <p>
-                The formal prerequisites to this course are CSCI 0160, 0180, or
-                0190. Additional experience in software engineering is
-                recommended, including CSCI 0320 or 1320. This course is taught
-                in <b>Python 3.7,</b> but no prior experience is necessary. We
-                will provide several resources to get students started with
-                Python at the beginning of the course. It is suggested that
-                students also have experience in statistics (APMA 1650 or CSCI
-                1450) and linear algebra (MATH 0520, MATH 0540, or CSCI 0530)
-                for the statistics and machine learning portion of this course.
-              </p>
-            </div>
-          </div>
-
-          <div class="right-side" id="sidebar">
-            <div id="overview">
-              <h2>overview</h2>
-              <h6 class="overview-sub">Instructor</h6>
-              <p>
-                <a
-                  target="_blank"
-                  href="http://cs.brown.edu/people/faculty/ld9/"
-                  >Lorenzo De Stefani</a
-                >
-              </p>
-
-              <h6 class="overview-sub">Instructor Office Hours</h6>
-              <p>
-                <a
-                  target="_blank"
-                  href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUhoUzZmeDJrY0h1fGRlZmF1bHR8YzM4YTIxN2IwOWU3MmNlOWIwN2ZiN2MxMTk2ZDdjMDI"
-                  >Schedule Zoom Meeting</a
-                >
-              </p>
-
-              <h6 class="overview-sub">HTA Mailing List</h6>
-              <p>
-                <a target="_blank" href="mailto:cs1951aheadtas@lists.brown.edu"
-                  >cs1951aheadtas@lists.brown.edu</a
-                >
-              </p>
-
-              <h6 class="overview-sub">Location & Time</h6>
-              <p>
-                Mondays & Wednesdays <br />
-                3:00 - 4:20 pm
-              </p>
-              <p>
-                <a target="_blank" href="https://brown.zoom.us/j/92014575357"
-                  >Lecture Zoom Link</a
-                >
-              </p>
-
-              <h6 class="overview-sub">Course Materials</h6>
-              <div>
-                <p>
-                  <a
-                    target="_blank"
-                    href="https://docs.google.com/document/d/1_ZnOsF1fOplZR2TKUgJXTBth32bJT1UQZOB0phHJp8k/edit?usp=sharing"
-                    >Syllabus</a
-                  >
-                </p>
-                <p>
-                  <a target="_blank" href="https://forms.gle/igNzHrBaUhzbdP489"
-                    >Anonymous Feedback Form</a
-                  >
-                </p>
-                <p>
-                  <a target="_blank" href="https://forms.gle/wfaAPUVU6WUJimd18"
-                    >Capstone Declaration Form</a
-                  >
-                </p>
-                <p>
-                  <a target="_blank" href="https://forms.gle/kMXRK3iNZ22irehcA"
-                    >Blocklist Form</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div id="grading" style="padding-top: 15px">
-              <h2>grading</h2>
-              <p>Below is the grading scheme for the course:</p>
-
-              <div id="pie-legend"></div>
-              <div id="pie-chart"></div>
-            </div>
-
-            <div id="late-policy" style="padding-top: 15px">
-              <h2>late days</h2>
-              <p>
-                You are given 3 late days to use throughout the semester for any
-                assignment, excluding the final project and labs. The maximum is
-                2 per assignment. Once all late days are exhausted, assignments
-                will not be accepted unless an extension has been granted.
-                Details should be found in the syllabus.
-                <br />
-                <br />
-                While we will try to be consistent,
-                <strong>the syllabus is our source of truth</strong>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid" id="footer">
-        <div class="container">
-          <p>
-            &copy; 2022 CS1951A Staff | Computer Science Department | Brown
-            University
-          </p>
-        </div>
-      </div> -->
     </div>
 
     <script>
-      var data = [
-        { name: "Labs", value: 10, realvalue: 10 },
-        { name: "Assignments", value: 50, realvalue: 50 },
-        { name: "Final Project", value: 40, realvalue: 40 },
-      ];
-      var text = "";
-
-      var colors = ["#644747", "#E09D9E", "#EDEDED"];
-      // ["#ff5338", "#ffd724", "#2d9feb", "#b87aeb"]; // var colors = ["#005af1", "#005af1", "#005af1"];
-      var width = 200;
-      var height = 200;
-      var thickness = 40;
-      var duration = 750;
-      var padding = 10;
-      var opacity = 0.8;
-      var opacityHover = 1;
-      var otherOpacityOnHover = 0.8;
-      var tooltipMargin = 13;
-
-      var radius = Math.min(width - padding, height - padding) / 2;
-      var color = d3.scaleOrdinal(d3.schemeCategory10);
-
-      var pie_svg = d3
-        .select("#pie-chart")
-        .append("svg")
-        .attr("class", "pie")
-        .attr("width", width)
-        .attr("height", height);
-
-      var g = pie_svg
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-      var arc = d3.arc().innerRadius(0).outerRadius(radius);
-
-      var pie = d3
-        .pie()
-        .value(function (d) {
-          return d.value;
-        })
-        .sort(null);
-
-      var path = g
-        .selectAll("path")
-        .data(pie(data))
-        .enter()
-        .append("g")
-        .append("path")
-        .attr("d", arc)
-        .attr("fill", (d, i) => colors[i])
-        .style("opacity", opacity)
-        .on("mouseover", function (d) {
-          d3.selectAll("path").style("opacity", otherOpacityOnHover);
-          d3.select(this).style("opacity", opacityHover);
-
-          let g = pie_svg
-            .style("cursor", "pointer")
-            .append("g")
-            .attr("class", "tooltip")
-            .style("opacity", 0);
-
-          g.append("text")
-            .attr("class", "name-text")
-            .text(`${d.data.name} (${d.data.realvalue}%)`)
-            .attr("text-anchor", "middle");
-
-          let text = g.select("text");
-          let bbox = text.node().getBBox();
-          let padding = 2;
-          g.insert("rect", "text")
-            .attr("x", bbox.x - padding)
-            .attr("y", bbox.y - padding)
-            .attr("width", bbox.width + padding * 2)
-            .attr("height", bbox.height + padding * 2)
-            .style("fill", "white")
-            .style("opacity", 0.75);
-        })
-        .on("mousemove", function (d) {
-          let mousePosition = d3.mouse(this);
-          let x = mousePosition[0] + width / 2;
-          let y = mousePosition[1] + height / 2 - tooltipMargin;
-
-          let text = d3.select(".tooltip text");
-          let bbox = text.node().getBBox();
-          if (x - bbox.width / 2 < 0) {
-            x = bbox.width / 2;
-          } else if (width - x - bbox.width / 2 < 0) {
-            x = width - bbox.width / 2;
-          }
-
-          if (y - bbox.height / 2 < 0) {
-            y = bbox.height + tooltipMargin * 2;
-          } else if (height - y - bbox.height / 2 < 0) {
-            y = height - bbox.height / 2;
-          }
-
-          d3.select(".tooltip")
-            .style("opacity", 1)
-            .attr("transform", `translate(${x}, ${y})`);
-        })
-        .on("mouseout", function (d) {
-          pie_svg.style("cursor", "none").select(".tooltip").remove();
-          path.style("opacity", opacity);
-        })
-        .on("touchstart", function (d) {
-          pie_svg.style("cursor", "none");
-        })
-        .each(function (d, i) {
-          this._current = i;
-        }); // MAKING A LEGEND
-
-      let legend = d3
-        .select("#pie-legend")
-        .append("div")
-        .attr("class", "legend")
-        .style("margin-top", "0px");
-
-      let keys = legend
-        .selectAll(".key")
-        .data(data)
-        .enter()
-        .append("div")
-        .attr("class", "key")
-        .style("display", "flex")
-        .style("align-items", "center")
-        .style("margin-right", "20px");
-
-      keys
-        .append("div")
-        .attr("class", "symbol")
-        .style("height", "10px")
-        .style("width", "10px")
-        .style("margin", "5px 5px")
-        .style("background-color", (d, i) => colors[i]);
-
-      keys
-        .append("div")
-        .attr("class", "name")
-        .text((d) => `${d.name} (${d.realvalue}%)`);
-
-      keys.exit().remove(); /*----- Factor this stuff out later ------*/ //set the dimensions and margins of the graph
-
-      var colors_bar = [
-        "#b87aeb",
-        "#ff5338",
-        "#ffa10a",
-        "#ffdd1f",
-        "#8feb3f",
-        "#30e39b",
-        "#2d9feb",
-      ];
-      var rgba_bar = [
-        "rgba(184, 122, 235, 0.8)",
-        "rgba(255, 83, 56, 0.8)",
-        "rgba(255, 161, 10, 0.8)",
-        "rgba(255, 221, 31, 0.8)",
-        "rgba(143, 235, 63, 0.8)",
-        "rgba(48, 227, 155, 0.8)",
-        "rgba(45, 159, 235, 0.8)",
-      ];
-
-      var margin = { top: 20, right: 20, bottom: 120, left: 50 },
-        bar_width = 480 - margin.left - margin.right,
-        bar_height = 430 - margin.top - margin.bottom; // set the ranges
-
-      var bar_x = d3.scaleBand().range([0, bar_width]).padding(0.35);
-      var bar_y = d3.scaleLinear().range([bar_height, 0]);
-
-      function make_y_gridlines() {
-        return d3.axisLeft(bar_y).ticks(8);
-      } // append the svg object to the body of the page // append a 'group' element to 'svg' // moves the 'group' element to the top left margin
-
-      var bar_svg = d3
-        .select("#barchart")
-        .append("svg")
-        .attr("width", bar_width + margin.left + margin.right)
-        .attr("height", bar_height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")"); // get the data
-
-      d3.csv("bargraph2.csv", function (error, data) {
-        if (error) throw error; // Scale the range of the data in the domains
-
-        bar_x.domain(
-          data.map(function (d) {
-            return d.Topic;
-          })
-        );
-        bar_y.domain([0, 8]);
-
-        var tooltip = d3
-          .select("#barchart")
-          .append("div")
-          .attr("class", "toolTip");
-
-        bar_svg
-          .append("g")
-          .attr("class", "grid")
-          .call(make_y_gridlines().tickSize(-bar_width).tickFormat("")); // append the rectangles for the bar chart
-
-        bar_svg
-          .selectAll(".bar")
-          .data(data)
-          .enter()
-          .append("rect")
-          .attr("class", "bar")
-          .attr("fill", function (d) {
-            return colors_bar[parseInt(d.Number) % 7];
-          })
-          .attr("x", function (d) {
-            return bar_x(d.Topic);
-          })
-          .attr("width", bar_x.bandwidth())
-          .attr("y", function (d) {
-            return bar_y(d.Number);
-          })
-          .attr("height", function (d) {
-            return bar_height - bar_y(d.Number);
-          })
-          .on("mousemove", function (d, i) {
-            tooltip // .style("left", d3.event.pageX - 100 + "px") // .style("top", d3.event.pageY  - 200 + "px")
-              .style("left", d3.event.pageX - 50 + "px")
-              .style("top", d3.event.pageY - 70 + "px")
-              .style("display", "inline-block")
-              .style("background-color", rgba_bar[(i + 1) % 7])
-              .style("color", "black")
-              .html(d.desc1 + "<br>" + d.desc2);
-          })
-          .on("mouseout", function (d) {
-            tooltip.style("display", "none");
-          }); // add the x Axis
-
-        bar_svg
-          .append("g")
-          .attr("class", "xaxis")
-          .attr("transform", "translate(0," + bar_height + ")")
-          .call(d3.axisBottom(bar_x));
-
-        bar_svg
-          .selectAll(".xaxis text")
-          .style("text-anchor", "end")
-          .attr("dx", "-.8em")
-          .attr("dy", ".15em")
-          .attr("transform", "rotate(-65)");
-
-        var labels = [
-          "",
-          "Red",
-          "Orange",
-          "Yellow",
-          "Green",
-          "Mint",
-          "Blue",
-          "Purple",
-          "",
-        ]; // add the y Axis
-
-        bar_svg
-          .append("g")
-          .attr("class", "yaxis")
-          .call(
-            d3.axisLeft(bar_y).tickFormat(function (d, i) {
-              return labels[i];
-            })
-          );
-
-        bar_svg.selectAll(".xaxis .tick line").remove();
-      });
+      // function to handle on arrow click
+      function handleArrowClick(index) {
+        // rotate arrow
+        var arrow = document.getElementsByClassName("arrow")[index];
+        arrow.classList.toggle("arrow-collapsed");
+        // collapse the section container
+        var sectionContainer =
+          document.getElementsByClassName("section-container")[index];
+        // hide all p tags in section container
+        var pTags = sectionContainer.getElementsByTagName("p");
+        for (var i = 0; i < pTags.length; i++) {
+          pTags[i].classList.toggle("p-collapsed");
+        }
+        // hide all ul tags in section container
+        var ulTags = sectionContainer.getElementsByTagName("ul");
+        for (var i = 0; i < ulTags.length; i++) {
+          ulTags[i].classList.toggle("ul-collapsed");
+        }
+      }
     </script>
   </body>
 </html>

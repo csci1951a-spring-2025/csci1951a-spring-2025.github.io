@@ -113,7 +113,11 @@
         <div class="right-container">
           <div class="section-container" id="last-section">
             <h1 class="section-header">
-              <img src="../../assets/images/arrow.png" class="arrow" />
+              <img
+                src="../../assets/images/arrow.png"
+                class="arrow"
+                onClick="handleArrowClick(0)"
+              />
               <span> Final Project </span>
             </h1>
             <p>
@@ -161,7 +165,11 @@
 
           <div class="section-container" id="last-section">
             <h1 class="section-header">
-              <img src="../../assets/images/arrow.png" class="arrow" />
+              <img
+                src="../../assets/images/arrow.png"
+                class="arrow"
+                onClick="handleArrowClick(1)"
+              />
               <span> Past Project </span>
             </h1>
             <p>
@@ -189,6 +197,26 @@
       </div>
     </div>
 
-    <script></script>
+    <script>
+      // function to handle on arrow click
+      function handleArrowClick(index) {
+        // rotate arrow
+        var arrow = document.getElementsByClassName("arrow")[index];
+        arrow.classList.toggle("arrow-collapsed");
+        // collapse the section container
+        var sectionContainer =
+          document.getElementsByClassName("section-container")[index];
+        // hide all p tags in section container
+        var pTags = sectionContainer.getElementsByTagName("p");
+        for (var i = 0; i < pTags.length; i++) {
+          pTags[i].classList.toggle("p-collapsed");
+        }
+        // hide all ul tags in section container
+        var ulTags = sectionContainer.getElementsByTagName("ul");
+        for (var i = 0; i < ulTags.length; i++) {
+          ulTags[i].classList.toggle("ul-collapsed");
+        }
+      }
+    </script>
   </body>
 </html>
