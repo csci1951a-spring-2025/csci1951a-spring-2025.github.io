@@ -292,6 +292,7 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-container:hover {
