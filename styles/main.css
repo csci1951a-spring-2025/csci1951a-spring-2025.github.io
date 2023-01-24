@@ -96,12 +96,14 @@ li {
 }
 
 .animal-mode {
-  background-image: url("../../assets/gif/panda.gif"),
-    url("../assets/gif/oreo.gif"),
+  background-image: 
+  /* url("https://i.pinimg.com/originals/1e/58/80/1e58803f6515649ef5e8210a82acaff3.gif"), */
+    url("../../assets/gif/panda.gif"), url("../assets/gif/oreo.gif"),
     /* url("https://i.pinimg.com/originals/0e/9b/db/0e9bdb22a1a622fd8fb98e4d80419af2.gif"), */
       /* url("https://cdn.dribbble.com/users/940782/screenshots/2715943/pandadribbble.gif"), */
       url("https://cdna.artstation.com/p/assets/images/images/025/958/956/original/lenneke-van-doorn-runanimation-1.gif?1587462989"),
-    url("../assets/gif/chocolatechip.gif");
+    /* url("../assets/gif/chocolatechip.gif") */
+      url("https://i.pinimg.com/originals/1e/58/80/1e58803f6515649ef5e8210a82acaff3.gif");
   background-repeat: no-repeat;
   background-size: contain;
   animation: move-animal 80s linear infinite;
@@ -437,7 +439,7 @@ li {
 
 /* FOOTER */
 .footer {
-  height: 2rem;
+  /* height: 2rem; */
   border: 1px solid rgb(218, 218, 218);
   border-bottom: none;
   text-align: center;
