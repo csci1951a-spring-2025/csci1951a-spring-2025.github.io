@@ -1,289 +1,199 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="author" content="CS1951A" />
-    <meta name="description" content="Website for Brown CS1951A" />
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-      integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" /> -->
-    <link rel="stylesheet" type="text/css" href="../../styles/main.css" />
-    <link rel="icon" href="../../assets/icons/favicon.png" type="image/png" />
-    <title>CS1951A</title>
-  </head>
-  <body>
-    <div class="page-container">
-      <!-- Header / Navbar -->
-      <div class="header-container animal-mode">
-        <div class="left-header">
-          <a href="../../index.html">
-            <img
-              src="../../assets/icons/colab-icon.png"
-              alt="logo"
-              class="logo"
-            />
-          </a>
-          <div class="center-header">
-            <div>Welcome to CS1951A!</div>
-            <div>
-              <ul class="navlinks">
-                <a href="../../index.html"> Home </a>
-                <a href="../assignments/index.html"> Assignments </a>
-                <a class="active" href="index.html" id="active">
-                  Final Project</a
-                >
-                <a href="../hours/index.html"> Hours </a>
-                <a href="../resources/index.html"> Resources </a>
-                <a href="../staff/index.html"> Staff </a>
-                <li class="save-changes">Cannot save changes</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="right-header">
-          <div class="viewing-container">
-            <img src="../../assets/icons/view.png" alt="eye" class="eye-icon" />
-            Viewing
-          </div>
-          <img
-            src="../../assets/icons/user-icon.png"
-            alt="User Profile Image"
-            class="user-icon"
-          />
-        </div>
-      </div>
 
-      <!-- Main Content -->
-      <div class="main-container">
-        <div class="left-container">
-          <a
-            href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
-            target="_blank"
-          >
-            <img
-              src="../../assets/icons/doc-icon.png"
-              alt="Google Doc Icon"
-              class="icon"
-            />
-          </a>
-          <a
-            href="https://edstem.org/us/courses/35373/discussion/"
-            target="_blank"
-          >
-            <img
-              src="../../assets/icons/edstem-icon.png"
-              alt="EdStem Icon"
-              class="icon"
-            />
-          </a>
-          <a href="../hours/index.html">
-            <img
-              src="../../assets/icons/hours-icon.png"
-              alt="Hours Icon"
-              class="icon"
-            />
-          </a>
-          <a href="https://www.gradescope.com/courses/496400" target="_blank">
-            <img
-              src="../../assets/icons/gradescope-icon.png"
-              alt="Gradescope Icon"
-              class="icon"
-            />
-          </a>
-          <a
-            href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
-            target="_blank"
-          >
-            <img
-              src="../../assets/icons/calendar-icon.png"
-              alt="Calendar Icon"
-              class="icon"
-            />
-          </a>
-        </div>
-        <div class="right-container">
-          <div class="section-container" id="last-section">
-            <h1 class="section-header">
-              <img
-                src="../../assets/images/arrow.png"
-                class="arrow"
-                onClick="handleArrowClick(0)"
-              />
-              <span> Final Project </span>
-            </h1>
-            <p>
-              Project groups will work closely with a TA throughout the
-              semester. The dates for checkins are approximate, and may vary
-              depending on your group's schedule and that of your advisor.
-              <br />
-              <br />
-              See the final project
-              <a
-                target="_blank"
-                id="link"
-                href="https://docs.google.com/document/d/1THSZfTRn_139Aef4ZJ1YSEr0z6ayIukJi6H28PqeKww/edit?usp=sharing"
-              >
-                brief</a
-              >
-              for more details.
-              <br />
-              <br />
-              If you have a group, sign up using this
-              <a
-                target="_blank"
-                id="link"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfwtkUJhEGa-hfVmSxfsNG6oodmeg6FkhECrQAvZ3Pe0laOBw/viewform"
-              >
-                form</a
-              >. Only <strong> one </strong>
-              member needs to fill out the form.
-              <br />
-              <br />
-              If you need help finding a group, please fill out this
-              <a
-                target="_blank"
-                id="link"
-                href="https://forms.gle/nn7nWvd6R6EN4UQB8"
-              >
-                form</a
-              >.
-              <br />
-              <br />
-              Here are some examples of final projects from previous semesters:
-              <a
-                target="_blank"
-                id="link"
-                href="../../assets/posters/MichelinRestaurants.png"
-              >
-                Michelin Restaurants</a
-              >,
-              <a
-                target="_blank"
-                id="link"
-                href="../../assets/posters/Bearbnb.png"
-              >
-                Bearbnb</a
-              >,
-              <a
-                target="_blank"
-                id="link"
-                href="../../assets/posters/NYTCrosswords.png"
-              >
-                NYT Crosswords</a
-              >,
-              <a
-                target="_blank"
-                id="link"
-                href="../../assets/posters/NYCTripsAndTips.png"
-              >
-                NYT Trips and Tips</a
-              >, &
-              <a
-                target="_blank"
-                id="link"
-                href="../../assets/posters/MyAnimeList.png"
-              >
-                MyAnimeList Recommender</a
-              >.
-            </p>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="CS1951A" />
+  <meta name="description" content="Website for Brown CS1951A" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" /> -->
+  <link rel="stylesheet" type="text/css" href="../../styles/main.css" />
+  <link rel="icon" href="../../assets/icons/favicon.png" type="image/png" />
+  <title>CS1951A</title>
+</head>
 
-          <div class="code-cell-container">
-            <h1>Project Checkpoints</h1>
-            <p class="code-container">
-              <span>
-                <span class="code-line-number">1</span>
-                Group Formation =
-                <span class="code-number"> Due Feb 8</span>
-              </span>
-              <span>
-                <span class="code-line-number">2</span>
-                Project Proposal =
-                <span class="code-keyword2">Due Feb 22</span>
-              </span>
-              <span>
-                <span class="code-line-number">3</span>
-                Data Deliverable =
-                <span class="code-keyword3">Due March 22</span>
-              </span>
-              <span>
-                <span class="code-line-number">4</span>
-                Analysis Deliverable =
-                <span class="code-keyword4">Due April 26</span>
-              </span>
-              <span>
-                <span class="code-line-number">5</span>
-                Final Deliverable =
-                <span class="code-number">Due May 15</span>
-              </span>
-            </p>
-          </div>
-
-          <div class="section-container" id="last-section">
-            <h1 class="section-header">
-              <img
-                src="../../assets/images/arrow.png"
-                class="arrow"
-                onClick="handleArrowClick(1)"
-              />
-              <span> Past Project </span>
-            </h1>
-            <p>
-              Please check out highlighted example projects from the handout.
-              For more example project ideas, please check out our archive!
-              Additionally, you can take a look at
-              <a
-                target="_blank"
-                id="link"
-                href="https://github.com/awesomedata/awesome-public-datasets"
-              >
-                Awesome Public Datasets</a
-              >.
-            </p>
+<body>
+  <div class="page-container">
+    <!-- Header / Navbar -->
+    <div class="header-container animal-mode">
+      <div class="left-header">
+        <a href="../../index.html">
+          <img src="../../assets/icons/colab-icon.png" alt="logo" class="logo" />
+        </a>
+        <div class="center-header">
+          <div>Welcome to CS1951A!</div>
+          <div>
+            <ul class="navlinks">
+              <a href="../../index.html"> Home </a>
+              <a href="../assignments/index.html"> Assignments </a>
+              <a class="active" href="index.html" id="active">
+                Final Project</a>
+              <a href="../hours/index.html"> Hours </a>
+              <a href="../resources/index.html"> Resources </a>
+              <a href="../staff/index.html"> Staff </a>
+              <li class="save-changes">Cannot save changes</li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <!-- Footer -->
-      <div class="footer">
-        <p class="footer-text">
-          &copy; 2023 CS1951A Staff | Computer Science Department | Brown
-          University
-        </p>
+      <div class="right-header">
+        <div class="viewing-container">
+          <img src="../../assets/icons/view.png" alt="eye" class="eye-icon" />
+          Viewing
+        </div>
+        <img src="../../assets/icons/user-icon.png" alt="User Profile Image" class="user-icon" />
       </div>
     </div>
 
-    <script>
-      // function to handle on arrow click
-      function handleArrowClick(index) {
-        // rotate arrow
-        var arrow = document.getElementsByClassName("arrow")[index];
-        arrow.classList.toggle("arrow-collapsed");
-        // collapse the section container
-        var sectionContainer =
-          document.getElementsByClassName("section-container")[index];
-        // hide all p tags in section container
-        var pTags = sectionContainer.getElementsByTagName("p");
-        for (var i = 0; i < pTags.length; i++) {
-          pTags[i].classList.toggle("p-collapsed");
-        }
-        // hide all ul tags in section container
-        var ulTags = sectionContainer.getElementsByTagName("ul");
-        for (var i = 0; i < ulTags.length; i++) {
-          ulTags[i].classList.toggle("ul-collapsed");
-        }
+    <!-- Main Content -->
+    <div class="main-container">
+      <div class="left-container">
+        <a href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
+          target="_blank">
+          <img src="../../assets/icons/doc-icon.png" alt="Google Doc Icon" class="icon" />
+        </a>
+        <a href="https://edstem.org/us/courses/35373/discussion/" target="_blank">
+          <img src="../../assets/icons/edstem-icon.png" alt="EdStem Icon" class="icon" />
+        </a>
+        <a href="../hours/index.html">
+          <img src="../../assets/icons/hours-icon.png" alt="Hours Icon" class="icon" />
+        </a>
+        <a href="https://www.gradescope.com/courses/496400" target="_blank">
+          <img src="../../assets/icons/gradescope-icon.png" alt="Gradescope Icon" class="icon" />
+        </a>
+        <a href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
+          target="_blank">
+          <img src="../../assets/icons/calendar-icon.png" alt="Calendar Icon" class="icon" />
+        </a>
+      </div>
+      <div class="right-container">
+        <div class="section-container" id="last-section">
+          <h1 class="section-header">
+            <img src="../../assets/images/arrow.png" class="arrow" onClick="handleArrowClick(0)" />
+            <span> Final Project </span>
+          </h1>
+          <p>
+            Project groups will work closely with a TA throughout the
+            semester. The dates for checkins are approximate, and may vary
+            depending on your group's schedule and that of your advisor.
+            <br />
+            <br />
+            See the final project
+            <a target="_blank" class="link"
+              href="https://docs.google.com/document/d/1THSZfTRn_139Aef4ZJ1YSEr0z6ayIukJi6H28PqeKww/edit?usp=sharing">
+              brief</a>
+            for more details.
+            <br />
+            <br />
+            If you have a group, sign up using this
+            <a target="_blank" class="link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfwtkUJhEGa-hfVmSxfsNG6oodmeg6FkhECrQAvZ3Pe0laOBw/viewform">
+              form</a>. Only <strong> one </strong>
+            member needs to fill out the form.
+            <br />
+            <br />
+            If you need help finding a group, please fill out this
+            <a target="_blank" class="link" href="https://forms.gle/nn7nWvd6R6EN4UQB8">
+              form</a>.
+            <br />
+            <br />
+            Here are some examples of final projects from previous semesters:
+            <a target="_blank" class="link" href="../../assets/posters/MichelinRestaurants.png">
+              Michelin Restaurants</a>,
+            <a target="_blank" class="link" href="../../assets/posters/Bearbnb.png">
+              Bearbnb</a>,
+            <a target="_blank" class="link" href="../../assets/posters/NYTCrosswords.png">
+              NYT Crosswords</a>,
+            <a target="_blank" class="link" href="../../assets/posters/NYCTripsAndTips.png">
+              NYT Trips and Tips</a>, &
+            <a target="_blank" class="link" href="../../assets/posters/MyAnimeList.png">
+              MyAnimeList Recommender</a>.
+          </p>
+        </div>
+
+        <div class="code-cell-container">
+          <h1>Project Checkpoints</h1>
+          <p class="code-container">
+            <span>
+              <span class="code-line-number">1</span>
+              Group Formation =
+              <span class="code-number"> Due Feb 8</span>
+            </span>
+            <span>
+              <span class="code-line-number">2</span>
+              Project Proposal =
+              <span class="code-keyword2">Due Feb 22</span>
+            </span>
+            <span>
+              <span class="code-line-number">3</span>
+              Data Deliverable =
+              <span class="code-keyword3">Due March 22</span>
+            </span>
+            <span>
+              <span class="code-line-number">4</span>
+              Analysis Deliverable =
+              <span class="code-keyword4">Due April 26</span>
+            </span>
+            <span>
+              <span class="code-line-number">5</span>
+              Final Deliverable =
+              <span class="code-number">Due May 15</span>
+            </span>
+          </p>
+        </div>
+
+        <div class="section-container" id="last-section">
+          <h1 class="section-header">
+            <img src="../../assets/images/arrow.png" class="arrow" onClick="handleArrowClick(1)" />
+            <span> Past Project </span>
+          </h1>
+          <p>
+            Please check out highlighted example projects from the handout.
+            For more example project ideas, please check out our archive!
+            Additionally, you can take a look at
+            <a target="_blank" class="link" href="https://github.com/awesomedata/awesome-public-datasets">
+              Awesome Public Datasets</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="footer-text">
+        &copy; 2023 CS1951A Staff | Computer Science Department | Brown
+        University
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // function to handle on arrow click
+    function handleArrowClick(index) {
+      // rotate arrow
+      var arrow = document.getElementsByClassName("arrow")[index];
+      arrow.classList.toggle("arrow-collapsed");
+      // collapse the section container
+      var sectionContainer =
+        document.getElementsByClassName("section-container")[index];
+      // hide all p tags in section container
+      var pTags = sectionContainer.getElementsByTagName("p");
+      for (var i = 0; i < pTags.length; i++) {
+        pTags[i].classList.toggle("p-collapsed");
       }
-    </script>
-  </body>
+      // hide all ul tags in section container
+      var ulTags = sectionContainer.getElementsByTagName("ul");
+      for (var i = 0; i < ulTags.length; i++) {
+        ulTags[i].classList.toggle("ul-collapsed");
+      }
+    }
+  </script>
+</body>
+
 </html>

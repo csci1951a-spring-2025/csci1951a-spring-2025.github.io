@@ -65,13 +65,13 @@ li {
   color: #a31515;
 }
 
-#link {
+.link {
   color: #af00db;
   text-decoration: underline;
   cursor: pointer;
 }
 
-#link:hover {
+.link:hover {
   color: #925f9f;
 }
 

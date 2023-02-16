@@ -1,307 +1,240 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="author" content="CS1951A" />
-    <meta name="description" content="Brown CS1951A Website" />
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-      integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" /> -->
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
-    <link rel="icon" href="assets/icons/favicon.png" type="image/png" />
-    <title>CS1951A</title>
-  </head>
-  <body>
-    <div class="page-container">
-      <!-- Header / Navbar -->
-      <div class="header-container animal-mode">
-        <div class="left-header">
-          <a href="../../index.html">
-            <img
-              src="../../assets/icons/colab-icon.png"
-              alt="logo"
-              class="logo"
-            />
-          </a>
-          <div class="center-header">
-            <div>Welcome to CS1951A!</div>
-            <div>
-              <ul class="navlinks">
-                <a class="active" href="index.html" id="active"> Home </a>
-                <a href="pages/assignments/index.html"> Assignments </a>
-                <a href="pages/final-project/index.html"> Final Project </a>
-                <a href="pages/hours/index.html"> Hours </a>
-                <a href="pages/resources/index.html"> Resources </a>
-                <a href="pages/staff/index.html"> Staff </a>
-                <li class="save-changes">Cannot save changes</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="right-header">
-          <div class="viewing-container">
-            <img src="assets/icons/view.png" alt="eye" class="eye-icon" />
-            Viewing
-          </div>
-          <img
-            src="assets/icons/user-icon.png"
-            alt="User Profile Image"
-            class="user-icon"
-          />
-        </div>
-      </div>
 
-      <!-- Main Content -->
-      <div class="main-container">
-        <div class="left-container">
-          <a
-            href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
-            target="_blank"
-          >
-            <img
-              src="assets/icons/doc-icon.png"
-              alt="Google Doc Icon"
-              class="icon"
-            />
-          </a>
-          <a
-            href="https://edstem.org/us/courses/35373/discussion/"
-            target="_blank"
-          >
-            <img
-              src="assets/icons/edstem-icon.png"
-              alt="EdStem Icon"
-              class="icon"
-            />
-          </a>
-          <a href="pages/hours/index.html">
-            <img
-              src="assets/icons/hours-icon.png"
-              alt="Hours Icon"
-              class="icon"
-            />
-          </a>
-          <a href="https://www.gradescope.com/courses/496400" target="_blank">
-            <img
-              src="assets/icons/gradescope-icon.png"
-              alt="Gradescope Icon"
-              class="icon"
-            />
-          </a>
-          <a
-            href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
-            target="_blank"
-          >
-            <img
-              src="assets/icons/calendar-icon.png"
-              alt="Calendar Icon"
-              class="icon"
-            />
-          </a>
-        </div>
-        <div class="right-container">
-          <div class="section-container">
-            <h1 class="section-header">
-              <img
-                src="assets/images/arrow.png"
-                class="arrow"
-                onClick="handleArrowClick(0)"
-              />
-              <span>What is Data Science?</span>
-            </h1>
-            <p>
-              Data is the core of all domains from material science to
-              healthcare. Mastering big data requires a set of skills spanning a
-              variety disciplines, from distributed systems to statistics to
-              machine learning. This course will provide an overview of the wide
-              area of data science, with a particular focus on to the tools
-              required to store, clean, manipulate, visualize, model, and
-              ultimately extract information from large amounts of data.
-              <br />
-              <br />
-              <a
-                href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
-                target="_blank"
-                id="link"
-              >
-                Syllabus
-              </a>
-              <br />
-              <a
-                href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
-                target="_blank"
-                id="link"
-              >
-                Course Calendar
-              </a>
-              <br />
-              <a
-                href="https://edstem.org/us/courses/35373/discussion/2435647"
-                target="_blank"
-                id="link"
-              >
-                Lecture Slides & Material
-              </a>
-              <br />
-              <a
-                href="https://brown.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22a22a709a-b5de-4dff-8da9-af86012f4f92%22"
-                target="_blank"
-                id="link"
-              >
-                Panopto
-              </a>
-            </p>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="CS1951A" />
+  <meta name="description" content="Brown CS1951A Website" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" /> -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png" />
+  <title>CS1951A</title>
+</head>
 
-          <div class="code-cell-container">
-            <h1>Overview</h1>
-            <p class="code-container">
-              <span>
-                <span class="code-line-number">1</span>
-                Instructor =
-                <span class="code-number">Lorenzo De Stefani</span>
-              </span>
-              <span>
-                <span class="code-line-number">2</span>
-                Instructor Office Hours =
-                <span class="code-keyword2">TBD</span>
-              </span>
-              <span>
-                <span class="code-line-number">3</span>
-                HTA Mailing List =
-                <a href="mailto:cs1951aheadtas@lists.brown.edu" id="link">
-                  cs1951aheadtas@lists.brown.edu
-                </a>
-              </span>
-              <span>
-                <span class="code-line-number">4</span>
-                Lecture Dates =
-                <span class="code-keyword4"> Mondays & Wednesdays </span>
-              </span>
-              <span>
-                <span class="code-line-number">5</span>
-                Lecture Time =
-                <span class="code-number"> 3:00 - 4:20 PM </span>
-              </span>
-              <span>
-                <span class="code-line-number">6 </span>Lecture Location =
-                <span class="code-keyword2">
-                  85 Waterman Street, Room 130
-                </span>
-              </span>
-            </p>
-          </div>
-
-          <div class="section-container">
-            <h1 class="section-header">
-              <img
-                src="assets/images/arrow.png"
-                class="arrow"
-                onClick="handleArrowClick(1)"
-              />
-              <span>Topics Covered</span>
-            </h1>
-            <ul>
-              <li>Database Design and SQL</li>
-              <li>Web Scraping & Data Cleaning</li>
-              <li>Hypothesis Testing</li>
-              <li>Machine Learning</li>
-              <li>Mapreduce</li>
-              <li>Differential Privacy</li>
-              <li>Correlation vs Causation</li>
+<body>
+  <div class="page-container">
+    <!-- Header / Navbar -->
+    <div class="header-container animal-mode">
+      <div class="left-header">
+        <a href="../../index.html">
+          <img src="../../assets/icons/colab-icon.png" alt="logo" class="logo" />
+        </a>
+        <div class="center-header">
+          <div>Welcome to CS1951A!</div>
+          <div>
+            <ul class="navlinks">
+              <a class="active" href="index.html" id="active"> Home </a>
+              <a href="pages/assignments/index.html"> Assignments </a>
+              <a href="pages/final-project/index.html"> Final Project </a>
+              <a href="pages/hours/index.html"> Hours </a>
+              <a href="pages/resources/index.html"> Resources </a>
+              <a href="pages/staff/index.html"> Staff </a>
+              <li class="save-changes">Cannot save changes</li>
             </ul>
           </div>
-
-          <div class="section-container">
-            <h1 class="section-header">
-              <img
-                src="assets/images/arrow.png"
-                class="arrow"
-                onClick="handleArrowClick(2)"
-              />
-              <span> Final Project </span>
-            </h1>
-            <p>
-              Throughout the entire course you will be working on a data science
-              project which seeks to answer an interesting and important
-              real-world question. You will be collecting your own data,
-              cleaning it, modeling it, visualizing it, and finally presenting
-              your results in a poster session at the end of the course. You
-              will work in groups of four, and will be assigned a mentor TA to
-              help you through the process.
-              <br />
-              <br />
-              Additionally, your project can be used as a capstone with just a
-              few extra requirements, fully integrating what you will have
-              learned in the course, and building a fully-functional data
-              science application.
-            </p>
-          </div>
-
-          <div class="section-container" id="last-section">
-            <h1 class="section-header">
-              <img
-                src="assets/images/arrow.png"
-                class="arrow"
-                onClick="handleArrowClick(3)"
-              />
-              <span> Prerequisites </span>
-            </h1>
-            <p>
-              The formal prerequisites to this course are CSCI 0160, 0180, or
-              0190. Additional experience in software engineering is
-              recommended, including CSCI 0320 or 1320. This course is taught in
-              Python 3.7, but no prior experience is necessary. We will provide
-              several resources to get students started with Python at the
-              beginning of the course. It is suggested that students also have
-              experience in statistics (APMA 1650 or CSCI 1450) and linear
-              algebra (MATH 0520, MATH 0540, or CSCI 0530) for the statistics
-              and machine learning portion of this course.
-            </p>
-          </div>
         </div>
       </div>
-
-      <!-- Footer -->
-      <div class="footer">
-        <p class="footer-text">
-          &copy; 2023 CS1951A Staff | Computer Science Department | Brown
-          University
-        </p>
+      <div class="right-header">
+        <div class="viewing-container">
+          <img src="assets/icons/view.png" alt="eye" class="eye-icon" />
+          Viewing
+        </div>
+        <img src="assets/icons/user-icon.png" alt="User Profile Image" class="user-icon" />
       </div>
     </div>
 
-    <script>
-      // function to handle on arrow click
-      function handleArrowClick(index) {
-        // rotate arrow
-        var arrow = document.getElementsByClassName("arrow")[index];
-        arrow.classList.toggle("arrow-collapsed");
-        // collapse the section container
-        var sectionContainer =
-          document.getElementsByClassName("section-container")[index];
-        // hide all p tags in section container
-        var pTags = sectionContainer.getElementsByTagName("p");
-        for (var i = 0; i < pTags.length; i++) {
-          pTags[i].classList.toggle("p-collapsed");
-        }
-        // hide all ul tags in section container
-        var ulTags = sectionContainer.getElementsByTagName("ul");
-        for (var i = 0; i < ulTags.length; i++) {
-          ulTags[i].classList.toggle("ul-collapsed");
-        }
+    <!-- Main Content -->
+    <div class="main-container">
+      <div class="left-container">
+        <a href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
+          target="_blank">
+          <img src="assets/icons/doc-icon.png" alt="Google Doc Icon" class="icon" />
+        </a>
+        <a href="https://edstem.org/us/courses/35373/discussion/" target="_blank">
+          <img src="assets/icons/edstem-icon.png" alt="EdStem Icon" class="icon" />
+        </a>
+        <a href="pages/hours/index.html">
+          <img src="assets/icons/hours-icon.png" alt="Hours Icon" class="icon" />
+        </a>
+        <a href="https://www.gradescope.com/courses/496400" target="_blank">
+          <img src="assets/icons/gradescope-icon.png" alt="Gradescope Icon" class="icon" />
+        </a>
+        <a href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
+          target="_blank">
+          <img src="assets/icons/calendar-icon.png" alt="Calendar Icon" class="icon" />
+        </a>
+      </div>
+      <div class="right-container">
+        <div class="section-container">
+          <h1 class="section-header">
+            <img src="assets/images/arrow.png" class="arrow" onClick="handleArrowClick(0)" />
+            <span>What is Data Science?</span>
+          </h1>
+          <p>
+            Data is the core of all domains from material science to
+            healthcare. Mastering big data requires a set of skills spanning a
+            variety disciplines, from distributed systems to statistics to
+            machine learning. This course will provide an overview of the wide
+            area of data science, with a particular focus on to the tools
+            required to store, clean, manipulate, visualize, model, and
+            ultimately extract information from large amounts of data.
+            <br />
+            <br />
+            <a href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
+              target="_blank" class="link">
+              Syllabus
+            </a>
+            <br />
+            <a href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
+              target="_blank" class="link">
+              Course Calendar
+            </a>
+            <br />
+            <a href="https://edstem.org/us/courses/35373/discussion/2435647" target="_blank" class="link">
+              Lecture Slides & Material
+            </a>
+            <br />
+            <a href="https://brown.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22a22a709a-b5de-4dff-8da9-af86012f4f92%22"
+              target="_blank" class="link">
+              Panopto
+            </a>
+          </p>
+        </div>
+
+        <div class="code-cell-container">
+          <h1>Overview</h1>
+          <p class="code-container">
+            <span>
+              <span class="code-line-number">1</span>
+              Instructor =
+              <span class="code-number">Lorenzo De Stefani</span>
+            </span>
+            <span>
+              <span class="code-line-number">2</span>
+              Instructor Office Hours =
+              <span class="code-keyword2">TBD</span>
+            </span>
+            <span>
+              <span class="code-line-number">3</span>
+              HTA Mailing List =
+              <a href="mailto:cs1951aheadtas@lists.brown.edu" class="link">
+                cs1951aheadtas@lists.brown.edu
+              </a>
+            </span>
+            <span>
+              <span class="code-line-number">4</span>
+              Lecture Dates =
+              <span class="code-keyword4"> Mondays & Wednesdays </span>
+            </span>
+            <span>
+              <span class="code-line-number">5</span>
+              Lecture Time =
+              <span class="code-number"> 3:00 - 4:20 PM </span>
+            </span>
+            <span>
+              <span class="code-line-number">6 </span>Lecture Location =
+              <span class="code-keyword2">
+                85 Waterman Street, Room 130
+              </span>
+            </span>
+          </p>
+        </div>
+
+        <div class="section-container">
+          <h1 class="section-header">
+            <img src="assets/images/arrow.png" class="arrow" onClick="handleArrowClick(1)" />
+            <span>Topics Covered</span>
+          </h1>
+          <ul>
+            <li>Database Design and SQL</li>
+            <li>Web Scraping & Data Cleaning</li>
+            <li>Hypothesis Testing</li>
+            <li>Machine Learning</li>
+            <li>Mapreduce</li>
+            <li>Differential Privacy</li>
+            <li>Correlation vs Causation</li>
+          </ul>
+        </div>
+
+        <div class="section-container">
+          <h1 class="section-header">
+            <img src="assets/images/arrow.png" class="arrow" onClick="handleArrowClick(2)" />
+            <span> Final Project </span>
+          </h1>
+          <p>
+            Throughout the entire course you will be working on a data science
+            project which seeks to answer an interesting and important
+            real-world question. You will be collecting your own data,
+            cleaning it, modeling it, visualizing it, and finally presenting
+            your results in a poster session at the end of the course. You
+            will work in groups of four, and will be assigned a mentor TA to
+            help you through the process.
+            <br />
+            <br />
+            Additionally, your project can be used as a capstone with just a
+            few extra requirements, fully integrating what you will have
+            learned in the course, and building a fully-functional data
+            science application.
+          </p>
+        </div>
+
+        <div class="section-container" id="last-section">
+          <h1 class="section-header">
+            <img src="assets/images/arrow.png" class="arrow" onClick="handleArrowClick(3)" />
+            <span> Prerequisites </span>
+          </h1>
+          <p>
+            The formal prerequisites to this course are CSCI 0160, 0180, or
+            0190. Additional experience in software engineering is
+            recommended, including CSCI 0320 or 1320. This course is taught in
+            Python 3.7, but no prior experience is necessary. We will provide
+            several resources to get students started with Python at the
+            beginning of the course. It is suggested that students also have
+            experience in statistics (APMA 1650 or CSCI 1450) and linear
+            algebra (MATH 0520, MATH 0540, or CSCI 0530) for the statistics
+            and machine learning portion of this course.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="footer-text">
+        &copy; 2023 CS1951A Staff | Computer Science Department | Brown
+        University
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // function to handle on arrow click
+    function handleArrowClick(index) {
+      // rotate arrow
+      var arrow = document.getElementsByClassName("arrow")[index];
+      arrow.classList.toggle("arrow-collapsed");
+      // collapse the section container
+      var sectionContainer =
+        document.getElementsByClassName("section-container")[index];
+      // hide all p tags in section container
+      var pTags = sectionContainer.getElementsByTagName("p");
+      for (var i = 0; i < pTags.length; i++) {
+        pTags[i].classList.toggle("p-collapsed");
       }
-    </script>
-  </body>
+      // hide all ul tags in section container
+      var ulTags = sectionContainer.getElementsByTagName("ul");
+      for (var i = 0; i < ulTags.length; i++) {
+        ulTags[i].classList.toggle("ul-collapsed");
+      }
+    }
+  </script>
+</body>
+
 </html>
