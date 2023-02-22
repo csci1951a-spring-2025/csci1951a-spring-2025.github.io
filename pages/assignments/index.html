@@ -1,195 +1,265 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="CS1951A" />
+    <meta name="description" content="Website for Brown CS1951A" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../../styles/main.css" />
+    <link rel="icon" href="../../assets/icons/favicon.png" type="image/png" />
+    <title>CS1951A</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="author" content="CS1951A" />
-  <meta name="description" content="Website for Brown CS1951A" />
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-    integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
-  <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" /> -->
-  <link rel="stylesheet" type="text/css" href="../../styles/main.css" />
-  <link rel="icon" href="../../assets/icons/favicon.png" type="image/png" />
-  <title>CS1951A</title>
-</head>
+  <body>
+    <div class="page-container">
+      <!-- Header / Navbar -->
+      <div class="header-container animal-mode">
+        <div class="left-header">
+          <a href="../../index.html">
+            <img
+              src="../../assets/icons/colab-icon.png"
+              alt="logo"
+              class="logo"
+            />
+          </a>
+          <div class="center-header">
+            <div>Welcome to CS1951A!</div>
+            <div>
+              <ul class="navlinks">
+                <a href="../../index.html"> Home </a>
+                <a class="active" href="index.html" id="active"> Assignments</a>
+                <a href="../final-project/index.html"> Final Project </a>
+                <a href="../hours/index.html"> Hours </a>
+                <a href="../resources/index.html"> Resources </a>
+                <a href="../staff/index.html"> Staff </a>
+                <li class="save-changes">Cannot save changes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-header">
+          <div class="viewing-container">
+            <img src="../../assets/icons/view.png" alt="eye" class="eye-icon" />
+            Viewing
+          </div>
+          <img
+            src="../../assets/icons/user-icon.png"
+            alt="User Profile Image"
+            class="user-icon"
+          />
+        </div>
+      </div>
 
-<body>
-  <div class="page-container">
-    <!-- Header / Navbar -->
-    <div class="header-container animal-mode">
-      <div class="left-header">
-        <a href="../../index.html">
-          <img src="../../assets/icons/colab-icon.png" alt="logo" class="logo" />
-        </a>
-        <div class="center-header">
-          <div>Welcome to CS1951A!</div>
-          <div>
-            <ul class="navlinks">
-              <a href="../../index.html"> Home </a>
-              <a class="active" href="index.html" id="active"> Assignments</a>
-              <a href="../final-project/index.html"> Final Project </a>
-              <a href="../hours/index.html"> Hours </a>
-              <a href="../resources/index.html"> Resources </a>
-              <a href="../staff/index.html"> Staff </a>
-              <li class="save-changes">Cannot save changes</li>
-            </ul>
+      <!-- Main Content -->
+      <div class="main-container">
+        <div class="left-container">
+          <a
+            href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons/doc-icon.png"
+              alt="Google Doc Icon"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://edstem.org/us/courses/35373/discussion/"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons/edstem-icon.png"
+              alt="EdStem Icon"
+              class="icon"
+            />
+          </a>
+          <a href="../hours/index.html">
+            <img
+              src="../../assets/icons/hours-icon.png"
+              alt="Hours Icon"
+              class="icon"
+            />
+          </a>
+          <a href="https://www.gradescope.com/courses/496400" target="_blank">
+            <img
+              src="../../assets/icons/gradescope-icon.png"
+              alt="Gradescope Icon"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons/calendar-icon.png"
+              alt="Calendar Icon"
+              class="icon"
+            />
+          </a>
+        </div>
+        <div class="right-container">
+          <div class="code-cell-container">
+            <h1>Homeworks</h1>
+            <p class="code-container">
+              <span>
+                <span class="code-line-number">0</span>
+                <!-- Sign the Collaboration Policy (Bottom of Syllabus) -->
+                <a
+                  href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
+                  class="link"
+                  target="_blank"
+                >
+                  Sign the Collaboration Policy (Bottom of Syllabus)</a
+                >
+                =
+                <span class="code-number"> Released Jan 30 - Due Feb 7</span>
+              </span>
+              <span>
+                <span class="code-line-number">1</span>
+                <a
+                  href="https://hackmd.io/@cs1951a/HyBytvPoi"
+                  class="link"
+                  target="_blank"
+                  >SQL</a
+                >
+                =
+                <span class="code-keyword2"> Released Feb 1 - Due Feb 15</span>
+              </span>
+              <span>
+                <span class="code-line-number">2</span>
+                <a
+                  href="https://hackmd.io/@cs1951a/HJKPj_wjo"
+                  class="link"
+                  target="_blank"
+                  >Web Scraping</a
+                >
+                =
+                <span class="code-keyword3">
+                  Released Feb 15 - Due March 1</span
+                >
+              </span>
+              <span>
+                <span class="code-line-number">3</span>
+                Map Reduce =
+                <span class="code-keyword4">
+                  Released March 1 - Due March 15</span
+                >
+              </span>
+              <span>
+                <span class="code-line-number">4</span>
+                Stats =
+                <span class="code-number">
+                  Released March 15 - Due March 25</span
+                >
+              </span>
+              <span>
+                <span class="code-line-number">5</span>
+                Machine Learning =
+                <span class="code-keyword2">
+                  Released April 5 - Due April 17
+                </span>
+              </span>
+              <span>
+                <span class="code-line-number">6 </span>Data Visualization =
+                <span class="code-keyword3">
+                  Released April 19 - Due April 29
+                </span>
+              </span>
+            </p>
+          </div>
+
+          <div class="code-cell-container">
+            <h1>Labs</h1>
+            <span>
+              Please fill out this
+              <a
+                href="https://forms.gle/NL1Rihz7H74JZzJ8A"
+                target="_blank"
+                class="link"
+                >form</a
+              >
+              to sign up for a lab section.
+            </span>
+            <span>
+              You can change you lab section selection (at most once) using this
+              <a
+                href="https://forms.gle/pwockXhbRt4HzFMR7"
+                target="_blank"
+                class="link"
+                >form</a
+              >.
+            </span>
+            <p class="code-container">
+              <span>
+                <span class="code-line-number">1</span>
+                <a
+                  href="https://drive.google.com/drive/folders/1hBdd_k4HVgHvhsLTT_PSjGnnQMwnmAkL?usp=sharing"
+                  class="link"
+                  target="_blank"
+                  >Intro to SQL</a
+                >
+                =
+                <span class="code-number">Released Feb 1</span>
+              </span>
+              <span>
+                <span class="code-line-number">2</span>
+                <a
+                  href="https://drive.google.com/drive/folders/1EC3Njt-Eps8TXFcGZgv-R3pSYdXWYLSa?usp=share_link"
+                  class="link"
+                  target="_blank"
+                  >Pandas/Numpy Lab</a
+                >
+                =
+                <span class="code-keyword2">Released Feb 15</span>
+              </span>
+              <span>
+                <span class="code-line-number">3</span>
+                Map Reduce Lab =
+                <span class="code-keyword3">Released March 1</span>
+              </span>
+              <span>
+                <span class="code-line-number">4</span>
+                Stats Lab =
+                <span class="code-keyword4">Released March 15</span>
+              </span>
+              <span>
+                <span class="code-line-number">5</span>
+                Intro To Machine Learning =
+                <span class="code-number"> Released April 5 </span>
+              </span>
+              <span>
+                <span class="code-line-number">6 </span>
+                Data Visualization =
+                <span class="code-keyword2"> Released April 12 </span>
+              </span>
+            </p>
           </div>
         </div>
       </div>
-      <div class="right-header">
-        <div class="viewing-container">
-          <img src="../../assets/icons/view.png" alt="eye" class="eye-icon" />
-          Viewing
-        </div>
-        <img src="../../assets/icons/user-icon.png" alt="User Profile Image" class="user-icon" />
+
+      <!-- Footer -->
+      <div class="footer">
+        <p class="footer-text">
+          &copy; 2023 CS1951A Staff | Computer Science Department | Brown
+          University
+        </p>
       </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="main-container">
-      <div class="left-container">
-        <a href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
-          target="_blank">
-          <img src="../../assets/icons/doc-icon.png" alt="Google Doc Icon" class="icon" />
-        </a>
-        <a href="https://edstem.org/us/courses/35373/discussion/" target="_blank">
-          <img src="../../assets/icons/edstem-icon.png" alt="EdStem Icon" class="icon" />
-        </a>
-        <a href="../hours/index.html">
-          <img src="../../assets/icons/hours-icon.png" alt="Hours Icon" class="icon" />
-        </a>
-        <a href="https://www.gradescope.com/courses/496400" target="_blank">
-          <img src="../../assets/icons/gradescope-icon.png" alt="Gradescope Icon" class="icon" />
-        </a>
-        <a href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
-          target="_blank">
-          <img src="../../assets/icons/calendar-icon.png" alt="Calendar Icon" class="icon" />
-        </a>
-      </div>
-      <div class="right-container">
-        <div class="code-cell-container">
-          <h1>Homeworks</h1>
-          <p class="code-container">
-            <span>
-              <span class="code-line-number">0</span>
-              <!-- Sign the Collaboration Policy (Bottom of Syllabus) -->
-              <a href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
-                class="link" target="_blank">
-                Sign the Collaboration Policy (Bottom of Syllabus)</a>
-              =
-              <span class="code-number"> Released Jan 30 - Due Feb 7</span>
-            </span>
-            <span>
-              <span class="code-line-number">1</span>
-              <a href="https://hackmd.io/@cs1951a/HyBytvPoi" class="link" target="_blank">SQL</a>
-              =
-              <span class="code-keyword2"> Released Feb 1 - Due Feb 15</span>
-            </span>
-            <span>
-              <span class="code-line-number">2</span>
-              <a href="https://hackmd.io/@cs1951a/HJKPj_wjo" class="link" target="_blank">Web Scraping</a>
-              =
-              <span class="code-keyword3">
-                Released Feb 15 - Due March 1</span>
-            </span>
-            <span>
-              <span class="code-line-number">3</span>
-              Map Reduce =
-              <span class="code-keyword4">
-                Released March 1 - Due March 15</span>
-            </span>
-            <span>
-              <span class="code-line-number">4</span>
-              Stats =
-              <span class="code-number">
-                Released March 15 - Due March 25</span>
-            </span>
-            <span>
-              <span class="code-line-number">5</span>
-              Machine Learning =
-              <span class="code-keyword2">
-                Released April 5 - Due April 17
-              </span>
-            </span>
-            <span>
-              <span class="code-line-number">6 </span>Data Visualization =
-              <span class="code-keyword3">
-                Released April 19 - Due April 29
-              </span>
-            </span>
-          </p>
-        </div>
-
-        <div class="code-cell-container">
-          <h1>Labs</h1>
-          <span>
-            Please fill out this
-            <a href="https://forms.gle/NL1Rihz7H74JZzJ8A" target="_blank" class="link">form</a>
-            to sign up for a lab section.
-          </span>
-          <span>
-            You can change you lab section selection (at most once) using this
-            <a href="https://forms.gle/pwockXhbRt4HzFMR7" target="_blank" class="link">form</a>.
-          </span>
-          <p class="code-container">
-            <span>
-              <span class="code-line-number">1</span>
-              <a href="https://drive.google.com/drive/folders/1hBdd_k4HVgHvhsLTT_PSjGnnQMwnmAkL?usp=sharing"
-                class="link" target="_blank">Intro to SQL</a>
-              =
-              <span class="code-number">Released Feb 1</span>
-            </span>
-            <span>
-              <span class="code-line-number">2</span>
-              <a href="https://drive.google.com/drive/folders/1EC3Njt-Eps8TXFcGZgv-R3pSYdXWYLSa?usp=share_link"
-                class="link" target="_blank">Pandas/Numpy Lab</a>
-              =
-              <span class="code-keyword2">Released Feb 15</span>
-            </span>
-            <span>
-              <span class="code-line-number">3</span>
-              Map Reduce Lab =
-              <span class="code-keyword3">Released March 1</span>
-            </span>
-            <span>
-              <span class="code-line-number">4</span>
-              Stats Lab =
-              <span class="code-keyword4">Released March 15</span>
-            </span>
-            <span>
-              <span class="code-line-number">5</span>
-              Intro To Machine Learning =
-              <span class="code-number">
-                Released April 5
-              </span>
-            </span>
-            <span>
-              <span class="code-line-number">6 </span>
-              Data Visualization =
-              <span class="code-keyword2">
-                Released April 12
-              </span>
-            </span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <p class="footer-text">
-        &copy; 2023 CS1951A Staff | Computer Science Department | Brown
-        University
-      </p>
-    </div>
-  </div>
-
-  <script></script>
-</body>
-
+    <script></script>
+  </body>
 </html>
