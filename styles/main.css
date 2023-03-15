@@ -368,6 +368,10 @@ li {
   height: 0.8rem;
 }
 
+.arrow:hover {
+  cursor: pointer;
+}
+
 .arrow-collapsed {
   transform: rotate(-90deg);
 }
