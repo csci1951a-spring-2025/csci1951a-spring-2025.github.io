@@ -1,131 +1,190 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="CS1951A" />
+    <meta name="description" content="Website for Brown CS1951A" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../../styles/main.css" />
+    <link rel="icon" href="../../assets/icons/favicon.png" type="image/png" />
+    <title>CS1951A</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="author" content="CS1951A" />
-  <meta name="description" content="Website for Brown CS1951A" />
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-    integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
-  <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" /> -->
-  <link rel="stylesheet" type="text/css" href="../../styles/main.css" />
-  <link rel="icon" href="../../assets/icons/favicon.png" type="image/png" />
-  <title>CS1951A</title>
-</head>
+  <body>
+    <div class="page-container">
+      <!-- Header / Navbar -->
+      <div class="header-container animal-mode">
+        <div class="left-header">
+          <a href="../../index.html">
+            <img
+              src="../../assets/icons/colab-icon.png"
+              alt="logo"
+              class="logo"
+            />
+          </a>
+          <div class="center-header">
+            <div>Welcome to CS1951A!</div>
+            <div>
+              <ul class="navlinks">
+                <a href="../../index.html"> Home </a>
+                <a href="../assignments/index.html"> Assignments </a>
+                <a href="../final-project/index.html"> Final Project </a>
+                <a class="active" href="index.html" id="active"> Hours</a>
+                <a href="../resources/index.html"> Resources </a>
+                <a href="../staff/index.html"> Staff </a>
+                <li class="save-changes">Cannot save changes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-header">
+          <div class="viewing-container">
+            <img src="../../assets/icons/view.png" alt="eye" class="eye-icon" />
+            Viewing
+          </div>
+          <img
+            src="../../assets/icons/user-icon.png"
+            alt="User Profile Image"
+            class="user-icon"
+          />
+        </div>
+      </div>
 
-<body>
-  <div class="page-container">
-    <!-- Header / Navbar -->
-    <div class="header-container animal-mode">
-      <div class="left-header">
-        <a href="../../index.html">
-          <img src="../../assets/icons/colab-icon.png" alt="logo" class="logo" />
-        </a>
-        <div class="center-header">
-          <div>Welcome to CS1951A!</div>
-          <div>
-            <ul class="navlinks">
-              <a href="../../index.html"> Home </a>
-              <a href="../assignments/index.html"> Assignments </a>
-              <a href="../final-project/index.html"> Final Project </a>
-              <a class="active" href="index.html" id="active"> Hours</a>
-              <a href="../resources/index.html"> Resources </a>
-              <a href="../staff/index.html"> Staff </a>
-              <li class="save-changes">Cannot save changes</li>
-            </ul>
+      <!-- Main Content -->
+      <div class="main-container">
+        <div class="left-container">
+          <a
+            href="https://docs.google.com/document/d/1tCio9RyquY2x12yPNVkkp-7kozX0i0FbN6xZXslULBk/edit?usp=sharing"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons/doc-icon.png"
+              alt="Google Doc Icon"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://edstem.org/us/courses/52678/discussion/"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons/edstem-icon.png"
+              alt="EdStem Icon"
+              class="icon"
+            />
+          </a>
+          <a href="index.html">
+            <img
+              src="../../assets/icons/hours-icon.png"
+              alt="Hours Icon"
+              class="icon"
+            />
+          </a>
+          <a href="https://www.gradescope.com/courses/702224" target="_blank">
+            <img
+              src="../../assets/icons/gradescope-icon.png"
+              alt="Gradescope Icon"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons/calendar-icon.png"
+              alt="Calendar Icon"
+              class="icon"
+            />
+          </a>
+        </div>
+
+        <div class="right-container">
+          <div class="section-container">
+            <h1 class="section-header">
+              <img
+                src="../../assets/images/arrow.png"
+                class="arrow"
+                onClick="handleArrowClick(0)"
+              />
+              <span> Hours </span>
+            </h1>
+            <p>
+              To sign up for hours, please use this
+              <a
+                target="_blank"
+                class="link"
+                href="https://hours.cs.brown.edu/login"
+              >
+                link</a
+              >.
+              <br />
+              <br />
+              Remember that you can always ask questions on
+              <a
+                target="_blank"
+                class="link"
+                href="https://edstem.org/us/courses/52678/discussion/"
+                >EdStem</a
+              >!
+            </p>
+          </div>
+          <div class="calendar-container" id="last-section">
+            <iframe
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=1&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&mode=MONTH&src=Y18wZjZjYWQyZjJiOTdkZDc4NjdiOWY2NzVhYWQ2OWMzNzM1ODZkYmUyMGE0ZjhlNmU4YzNhMjczYTdhZWU1ZWYzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23AD1457"
+              style="border-width: 0"
+              width="800"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              class="calendar"
+            ></iframe>
           </div>
         </div>
       </div>
-      <div class="right-header">
-        <div class="viewing-container">
-          <img src="../../assets/icons/view.png" alt="eye" class="eye-icon" />
-          Viewing
-        </div>
-        <img src="../../assets/icons/user-icon.png" alt="User Profile Image" class="user-icon" />
+
+      <!-- Footer -->
+      <div class="footer">
+        <p class="footer-text">
+          &copy; 2024 CS1951A Staff | Computer Science Department | Brown
+          University
+        </p>
       </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="main-container">
-      <div class="left-container">
-        <a href="https://docs.google.com/document/d/1IjBLZBjE9qol71H_GN7hAAV6oR-mcrkrfpMx1-kftvE/edit?usp=sharing"
-          target="_blank">
-          <img src="../../assets/icons/doc-icon.png" alt="Google Doc Icon" class="icon" />
-        </a>
-        <a href="https://edstem.org/us/courses/35373/discussion/" target="_blank">
-          <img src="../../assets/icons/edstem-icon.png" alt="EdStem Icon" class="icon" />
-        </a>
-        <a href="index.html">
-          <img src="../../assets/icons/hours-icon.png" alt="Hours Icon" class="icon" />
-        </a>
-        <a href="https://www.gradescope.com/courses/496400" target="_blank">
-          <img src="../../assets/icons/gradescope-icon.png" alt="Gradescope Icon" class="icon" />
-        </a>
-        <a href="https://docs.google.com/document/d/1r00SR32xD4N0L3dswwD41J4BYy4Q5_1rl76YfLQpVRg/edit?usp=sharing"
-          target="_blank">
-          <img src="../../assets/icons/calendar-icon.png" alt="Calendar Icon" class="icon" />
-        </a>
-      </div>
-
-      <div class="right-container">
-        <div class="section-container">
-          <h1 class="section-header">
-            <img src="../../assets/images/arrow.png" class="arrow" onClick="handleArrowClick(0)" />
-            <span> Hours </span>
-          </h1>
-          <p>
-            To sign up for hours, please use this
-            <a target="_blank" class="link" href="https://hours.cs.brown.edu/login">
-              link</a>.
-            <br />
-            <br />
-            Remember that you can always ask questions on
-            <a target="_blank" class="link" me" href="https://edstem.org/us/courses/35373/discussion/">EdStem</a>!
-          </p>
-        </div>
-        <div class="calendar-container" id="last-section">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=1&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&mode=MONTH&src=Y18wZjZjYWQyZjJiOTdkZDc4NjdiOWY2NzVhYWQ2OWMzNzM1ODZkYmUyMGE0ZjhlNmU4YzNhMjczYTdhZWU1ZWYzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23AD1457"
-            style="border-width: 0" width="800" height="600" frameborder="0" scrolling="no" class="calendar"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <p class="footer-text">
-        &copy; 2023 CS1951A Staff | Computer Science Department | Brown
-        University
-      </p>
-    </div>
-  </div>
-
-  <script>
-    // function to handle on arrow click
-    function handleArrowClick(index) {
-      // rotate arrow
-      var arrow = document.getElementsByClassName("arrow")[index];
-      arrow.classList.toggle("arrow-collapsed");
-      // collapse the section container
-      var sectionContainer =
-        document.getElementsByClassName("section-container")[index];
-      // hide all p tags in section container
-      var pTags = sectionContainer.getElementsByTagName("p");
-      for (var i = 0; i < pTags.length; i++) {
-        pTags[i].classList.toggle("p-collapsed");
+    <script>
+      // function to handle on arrow click
+      function handleArrowClick(index) {
+        // rotate arrow
+        var arrow = document.getElementsByClassName("arrow")[index];
+        arrow.classList.toggle("arrow-collapsed");
+        // collapse the section container
+        var sectionContainer =
+          document.getElementsByClassName("section-container")[index];
+        // hide all p tags in section container
+        var pTags = sectionContainer.getElementsByTagName("p");
+        for (var i = 0; i < pTags.length; i++) {
+          pTags[i].classList.toggle("p-collapsed");
+        }
+        // hide all ul tags in section container
+        var ulTags = sectionContainer.getElementsByTagName("ul");
+        for (var i = 0; i < ulTags.length; i++) {
+          ulTags[i].classList.toggle("ul-collapsed");
+        }
       }
-      // hide all ul tags in section container
-      var ulTags = sectionContainer.getElementsByTagName("ul");
-      for (var i = 0; i < ulTags.length; i++) {
-        ulTags[i].classList.toggle("ul-collapsed");
-      }
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
