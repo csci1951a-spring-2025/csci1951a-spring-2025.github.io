@@ -1,2 +1,2 @@
-# csci1951a-spring-2024.github.io
-The Spring 2024 repository for CS1951A Website
+# csci1951a-spring-2025.github.io
+The Spring 2025 repository for CS1951A Website
