@@ -112,15 +112,14 @@ li {
 .animal-mode {
   background-image: 
   /* url("https://i.pinimg.com/originals/1e/58/80/1e58803f6515649ef5e8210a82acaff3.gif"), */
-    url("../../assets/gif/panda.gif"), url("../../assets/gif/bear.gif"),
+    url("../../assets/gif/boba-running.gif"), url("../../assets/gif/bear.gif"),
     /* url("../assets/gif/oreo.gif"), */
       /* url("https://i.pinimg.com/originals/0e/9b/db/0e9bdb22a1a622fd8fb98e4d80419af2.gif"), */
       /* url("https://cdn.dribbble.com/users/940782/screenshots/2715943/pandadribbble.gif"), */
+      url("../assets/gif/turtle-cute.gif"),
       /* url("https://cdna.artstation.com/p/assets/images/images/025/958/956/original/lenneke-van-doorn-runanimation-1.gif?1587462989"), */
     /* url("../assets/gif/chocolatechip.gif") */
-      url("https://i.pinimg.com/originals/1e/58/80/1e58803f6515649ef5e8210a82acaff3.gif"),
-      url("https://tenor.com/m5i2zXl6kMT.gif"),
-      url("https://tenor.com/bOIWc.gif");
+      url("https://i.pinimg.com/originals/1e/58/80/1e58803f6515649ef5e8210a82acaff3.gif");
   background-repeat: no-repeat;
   background-size: contain;
   animation: move-animal 80s linear infinite;
