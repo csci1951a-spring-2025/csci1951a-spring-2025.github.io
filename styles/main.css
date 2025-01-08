@@ -354,6 +354,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-family: monospace;
 }
 
 .code-cell {
